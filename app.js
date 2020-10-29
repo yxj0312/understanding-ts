@@ -1,18 +1,10 @@
-function add(n1, n2, showResult, phrase) {
-    // Redundant bei using TS
-    // if (typeof n1 != 'number' || typeof n2 != 'number') {
-    //     throw new Error('Incorrect input!')
-    // }
-    var result = n1 + n2;
-    if (showResult) {
-        console.log(phrase + result);
-    }
-    else {
-        return result;
-    }
+var person = {
+    name: "Maximilian",
+    age: 30,
+    hobbies: ['Sports', 'Cooking']
+};
+console.log(person.name);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
 }
-var number1 = 5;
-var number2 = 2.8;
-var printResult = true;
-var resultPhrase = 'Result is: ';
-add(number1, number2, printResult, resultPhrase);

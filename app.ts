@@ -1,22 +1,15 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-    // Redundant bei using TS
-    // if (typeof n1 != 'number' || typeof n2 != 'number') {
-    //     throw new Error('Incorrect input!')
-    // }
-    const result = n1 + n2;
-    if (showResult) {
-        console.log(phrase + result);
-    } else {
-        return result;
-    }
+const person: {
+    name:string, 
+    age:number,
+    hobbies: Array<string>
+} = {
+    name: "Maximilian",
+    age: 30,
+    hobbies:['Sports', 'Cooking']
+};
+
+console.log(person.name)
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
 }
-
-// Type Assignment
-// let number1: number;
-// number1 = 5;
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultPhrase = 'Result is: '
-
-add(number1, number2, printResult, resultPhrase);
