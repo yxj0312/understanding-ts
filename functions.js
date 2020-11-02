@@ -17,3 +17,4 @@ addAndHandle(10, 20, (result) => {
 });
 // Error:
 // combineValues = printResult;
+//# sourceMappingURL=functions.js.map
