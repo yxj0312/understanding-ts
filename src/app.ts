@@ -2,16 +2,16 @@
 const button = document.querySelector('button')!;
 
 // noImplicitReturns
-function add1(n1:number, n2: number) {
-    if (n1 + n2 > 0) {
-        return n1 + n2;
-    }
-}
+// function add1(n1:number, n2: number) {
+//     if (n1 + n2 > 0) {
+//         return n1 + n2;
+//     }
+// }
 
 function clickHandler(message: string) {
     // noUnusedLocals
-    let userName = "Max";
-    console.log('Clicked!');
+    // let userName = "Max";
+    console.log('Clicked! ' +  message);
 };
 
 if (button) {
